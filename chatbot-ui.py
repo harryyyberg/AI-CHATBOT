@@ -6,7 +6,7 @@ import streamlit as st
 
 load_dotenv()
 
-model = ChatGoogleGenerativeAI(model = "gemini-2.5-flash")
+model = ChatGoogleGenerativeAI(model = "gemini-2.5-flash",google_api_key=st.secrets["GOOGLE_API_KEY"])
 
 st.set_page_config(page_title="CHATBOT")
 st.title("Chatbot")
